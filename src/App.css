@@ -1,38 +1,44 @@
-.App {
-  text-align: center;
+body {
+  --slack-color: #3f0f40;
+  overflow: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app-body {
   display: flex;
-  flex-direction: column;
+  height:100vh;
+
+}
+
+
+.home-message-container{
+  justify-content: space-between;
+  padding: 100px;
+  /* display: flex; */
+
+}
+
+
+
+@media (max-width: 991px) {
+  .home-message-container{
+    justify-content: space-between;
+    /* display: flex; */
+    padding:0px;
+  
+  }
+  
+}
+.home-message-container > h1 {
+   text-align: center;
+}
+
+.home-message-container > p {
+text-align: center;
+}
+.home-welcome-img {
+  height:auto !important;
+  width:100%;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  object-fit: contain;
 }

@@ -1,0 +1,33 @@
+
+
+.message {
+    display: flex;
+    align-items:center;
+    padding: 20px;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+
+}
+
+.message > img {
+    height:50px;
+    width:50px;
+    object-fit: contain;
+    border-radius: 50%;
+   
+}
+
+.message-info > h4  {
+    margin-left:10px;
+    text-transform: capitalize;
+}
+.message-info > p  {
+    margin-left:10px;
+}
+
+.message-timestamp {
+    color:gray;
+    font-weight: 400;
+    margin-left: 5px;
+    font-size: 13px;
+}
+
